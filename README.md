@@ -5,7 +5,7 @@
 1. **克隆项目到本地**
 
    ```
-   git clone https://github.com/HelloGitHub-Team/HelloDjango-blog-tutorial.git
+   git clone https://github.com/mamabushuohua/myblog
    ```
    
 2. **安装 Pipenv（已安装跳过）**
@@ -17,12 +17,10 @@
 3. **安装项目依赖**
 
    ```
-   cd HelloDjango-blog-tutorial
+   cd myblog
    pipenv install --dev
    ```
    
-   > 关于如何使用 Pipenv，参阅：[开始进入 django 开发之旅](http://zmrenwu.com/post/3/) 的 Pipenv 创建和管理虚拟环境部分。
-
 4. **迁移数据库**
 
    在项目根目录运行如下命令迁移数据库：
@@ -38,7 +36,6 @@
    pipenv run python manage.py createsuperuser
    ```
 
-   具体请参阅 [创作后台开启，请开始你的表演](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/65/)。
 
 6. **运行开发服务器**
 
@@ -64,7 +61,7 @@
 2. **克隆项目到本地**
 
    ```
-   git clone https://github.com/HelloGitHub-Team/HelloDjango-blog-tutorial.git
+   git clone https://github.com/mamabushuohua/myblog
    ```
 
 3. **构建镜像和启动容器**
