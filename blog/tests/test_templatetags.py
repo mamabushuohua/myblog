@@ -1,13 +1,15 @@
 from datetime import timedelta
 
 from django.apps import apps
-from django.contrib.auth.models import User
+
 from django.template import Context, Template
 from django.test import TestCase
 from django.urls import reverse
 from django.utils import timezone
 
 from ..models import Category, Post, Tag
+from users.models import User
+
 from ..templatetags.blog_extras import (
     show_archives,
     show_categories,

@@ -19,7 +19,7 @@ if __name__ == '__main__':
 
     from blog.models import Category, Post, Tag
     from comments.models import Comment
-    from django.contrib.auth.models import User
+    from users.models import User
 
     print('clean database')
     Post.objects.all().delete()

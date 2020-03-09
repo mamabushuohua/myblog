@@ -2,7 +2,9 @@ from django.test import TestCase
 from django.apps import apps
 from django.urls import reverse
 
-from blog.models import Post, User, Tag, Category
+from blog.models import Post, Tag, Category
+from users.models import User
+
 from ..feeds import AllPostsRssFeed
 
 from datetime import timedelta
@@ -84,6 +86,7 @@ class CategoryViewTestCase(BlogDataTestCase):
     def test_visit_a_nonexistent_category(self):
         url = reverse('blog:category', kwargs={'pk': 100})
         response = self.client.get(url)
+        print('response', response)
         self.assertEqual(response.status_code, 404)
 
     def test_without_any_post(self):

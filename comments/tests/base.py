@@ -3,7 +3,8 @@
 from django.apps import apps
 from django.test import TestCase
 
-from blog.models import User, Category, Post
+from blog.models import Category, Post
+from users.models import User
 
 
 class CommentDataTestCase(TestCase):

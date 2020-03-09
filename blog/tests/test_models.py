@@ -2,8 +2,9 @@ from django.test import TestCase
 from django.apps import apps
 from django.urls import reverse
 
-from blog.models import User, Post, Category, Tag
-from ..search_indexs import PostIndex
+from blog.models import Post, Category, Tag
+from users.models import User
+from ..search_indexes import PostIndex
 
 
 class CategoryModelTestCase(TestCase):

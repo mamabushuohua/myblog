@@ -1,7 +1,9 @@
 from django.apps import apps
 from django.urls import reverse
 
-from blog.models import User, Category, Post
+from blog.models import Category, Post
+from users.models import User
+
 
 from ..models import Comment
 from .base import CommentDataTestCase
