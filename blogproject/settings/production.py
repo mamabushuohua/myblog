@@ -6,4 +6,4 @@ print('production')
 DEBUG = False
 
 ALLOWED_HOSTS = ['blog.liequantech.com']
-HAYSTACK_CONNECTIONS['default']['URL'] = 'http://hellodjango_blog_tutorial_elasticsearch:9200/'
+# HAYSTACK_CONNECTIONS['default']['URL'] = 'http://hellodjango_blog_tutorial_elasticsearch:9200/'
