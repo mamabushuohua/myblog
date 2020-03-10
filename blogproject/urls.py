@@ -30,7 +30,7 @@ urlpatterns = [
     path('', include('comments.urls')),
 
     path('all/rss/', AllPostsRssFeed(), name='rss'),
-    path('search/', include('haystack.urls')),
+    # path('search/', include('haystack.urls')),
 ]
 
 handler404 = "blogproject.views.page_not_found"
