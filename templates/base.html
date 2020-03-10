@@ -80,6 +80,19 @@
               </div>
             {% endfor %}
         {% endif %}
+<!--         {% if user.is_authenticated %}
+        <div class="page-header">
+          <p class="">你已登录，欢迎你：<a href="#">{{ user.username }}</a></p>
+          <button class="btn btn-default"><a href="{% url 'logout' %}">注销登录</a></button>
+          <button class="btn btn-default"><a href="{% url 'password_change' %}?next={{ request.path }}">修改密码</a></button>
+        {% else %}
+          <p class="">你还没有登录，请
+            <button class="btn btn-default"><a href="{% url 'login' %}">登录</a></button>
+            或者
+            <button class="btn btn-default"><a href="{% url 'users:register' %}">注册</a></button>
+          </p>
+      </div>
+        {% endif %} -->
         <div class="row">
             <div class="col-md-4 col-sm-5 col-xs-8">
                 <div class="logo">
@@ -102,7 +115,6 @@
                             <li class="cl-effect-11"><a href="contact.html" data-hover="联系">联系</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
-                  <p class="navbar-text navbar-right">你已登录，欢迎你：<a href="#">{{ user.username }}</a></p>
 
                 </nav>
                 <div id="header-search-box">
@@ -116,18 +128,7 @@
 
                 </div>
 
-                {% if user.is_authenticated %}
-                  <p class="navbar-text navbar-right">你已登录，欢迎你：<a href="#">{{ user.username }}</a></p>
-                  <button class="btn btn-default"><a href="{% url 'logout' %}">注销登录</a></button>
-                  <button class="btn btn-default"><a href="{% url 'password_change' %}?next={{ request.path }}">修改密码</a></button>
-                {% else %}
-                  <p class="navbar-text navbar-right">你还没有登录，请
-                    <button class="btn btn-default"><a href="{% url 'login' %}">登录</a></button>
-                    或者
-                    <button class="btn btn-default"><a href="{% url 'users:register' %}">注册</a></button>
-                  </p>
-                {% endif %}
-            </div><!-- col-md-8 -->
+            </div>
         </div>
     </header>
 </div>

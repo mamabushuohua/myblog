@@ -5,6 +5,8 @@ SECRET_KEY = 'development-secret-key'
 
 DEBUG = True
 
+print('local')
+
 ALLOWED_HOSTS = ['*']
 
 # 搜索设置
