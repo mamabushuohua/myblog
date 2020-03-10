@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'comments.apps.CommentsConfig',  # 注册 comments 应用
     'users.apps.UsersConfig',  # 注册 users 应用
     'pure_pagination',  # 分页
-    'haystack',
+    # 'haystack',
 ]
 
 MIDDLEWARE = [
