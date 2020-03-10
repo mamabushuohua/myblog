@@ -16,6 +16,7 @@ services:
     volumes:
       - database:/app/database
       - static:/app/static
+      - .:/app
     env_file:
       - envs/.production
     ports:
