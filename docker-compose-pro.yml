@@ -21,7 +21,7 @@ services:
     ports:
       - "8000:8000"
     environment:
-      DJANGO_SETTINGS_MODULE=blogproject.settings.production
+      - DJANGO_SETTINGS_MODULE=blogproject.settings.production
     command: /start.sh
 
   nginx:
